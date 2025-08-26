@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎉 Feliz Cumpleaños</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <button class="active" onclick="showTab('main')">main_thread()</button>
+    <button onclick="showTab('readme')">read_me.txt</button>
+    <button onclick="showTab('descrypt')">descrypt</button>
+    <button onclick="showTab('render')">render</button>
+    <button onclick="showTab('audio')">audio.mp3</button>
+  </nav>
+
+  <!-- Pestaña principal -->
+  <div id="main" class="content">
+    <div class="main-flex">
+      <div class="main-text">
+        <h1>🎉 ¡Feliz cumpleaños Feito!</h1>
+        <div class="hearts">💙 🧡</div>
+        <p>Mi amor que ridículo fue creer que la ternura era suficiente para que te quedaras.</p>
+      </div>
+      <div class="main-img">
+        <img src="cumple.jpg" alt="Feliz Cumpleaños" />
+      </div>
+    </div>
+    <!-- Audio de fondo para main -->
+    <audio id="bg-main" src="Dia de Enero - Shakira.mp3" loop></audio>
+  </div>
+
+  <!-- Pestaña frases -->
+  <div id="readme" class="content" style="display:none;">
+    <div class="readme-flex">
+      <div class="readme-img">
+        <img src="frases.jpeg" alt="Frases" />
+      </div>
+
+      <div class="readme-list">
+        <ul class="phrases-list">
+          <li class="phrase" data-text="• Te extraño, pero más que eso, deseo que estés bien, donde sea que estés.">✨ Haz clic para revelar la frase</li>
+          <li class="phrase" data-text="• OPUESTOS — Éramos tan distintos, tan opuestos, tan ajenos y ahí estaba la conexión, y esa era la coincidencia: lo que no teníamos en común.">✨ Haz clic para revelar la frase</li>
+          <li class="phrase" data-text="• Hoy me hubiera gustado recibir un mensaje tuyo diciéndome que te has dado cuenta de que sí quieres tenerme en tu vida. No escribiste, pero yo tampoco te escribí. En el fondo sé que buscarte es egoísta, y lo sé porque más allá de mis sentimientos, también existen tus sentimientos, y justamente por quererte, respeto tu tranquilidad sin mí.">✨ Haz clic para revelar la frase</li>
+          <li class="phrase" data-text="• Yo no pedía mucho, solo un paréntesis en tu prisa, un sorbo de tus palabras, un gesto sencillo que dijera 'aquí estoy.'">✨ Haz clic para revelar la frase</li>
+          <li class="phrase" data-text="• Cuídate a ti mismo. Sal a caminar un rato, lee un libro, come tu comida favorita, tómate unas vacaciones, escucha tu canción favorita, llora si es necesario, haz lo que tengas que hacer. Pero atiéndete y apapáchate a ti mismo. Al final del día, eres todo lo que tienes.">✨ Haz clic para revelar la frase</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Audio de fondo para readme -->
+    <audio id="bg-readme" src="El vino de tu boca - Alejandro Sanz.mp3" loop></audio>
+  </div>
+
+  <!-- Pestaña carta  -->
+  <div id="descrypt" class="content" style="display:none;">
+    <div class="descrypt-flex">
+      <!-- Video a la izquierda (silenciado para autoplay) -->
+      <div class="descrypt-video">
+        <video muted playsinline>
+          <source src="video carta.mp4" type="video/mp4">
+          Tu navegador no soporta video.
+        </video>
+      </div>
+
+      <!-- Texto de la carta  -->
+      <div class="descrypt-text">
+        <h2>📜 Base 32</h2>
+        <p>01000001 01100100 01101001 01101111 01110011 00100000 01101101 01101001 00100000 01100101 01110011 01110100 01110010 01100001 01101110 01101111 00100000 01100110 01100001 01110110 01101111 01110010 01101001 01110100 01101111 00001010</p>
+        <p>01110011 01110101 01110000 01101111 01101110 01100111 01101111 00100000 01110001 01110101 01100101 00100000 01110011 01101111 01101101 01101111 01110011 00100000 01100101 01111000 01110100 01110010 01100001 01101110 01101111 01110011 00001010</p>
+        <p>01101111 01110100 01110010 01100001 00100000 01110110 01100101 01111010 00101100 00100000 01110000 01100101 01110010 01101111 00100000 01100101 01110011 01110100 01100001 00100000 01110110 01100101 01111010 00100000 01100011 01101111 01101110 00100000 00001010</p>
+        <p>01110010 01100101 01100011 01110101 01100101 01110010 01100100 01101111 01110011 00100000 01100101 01101110 00100000 01100011 01101111 01101101 11000011 10111001 01101110 00101100 00100000 01100111 01110010 01100001 01100011 01101001 01100001 01110011 00100000 01110000 01101111 01110010 00001010</p>
+        <p>01110100 01101111 01100100 01101111 00100000 01101100 01101111 00100000 01110001 01110101 01100101 00100000 01101000 01101001 01100011 01101001 01110011 01110100 01100101 00100000 01110000 01101111 01110010 00100000 01101101 01101001 00101100 00001010</p>
+        <p>01110011 01100101 00100000 01110001 01110101 01100101 00100000 01110010 01100101 01100001 01101100 01101101 01100101 01101110 01110100 01100101 00100000 01110100 01100101 00100000 01100101 01111000 01110100 01110010 01100001 11000011 10111001 01100001 01110010 01100101 00111011 00001010</p>
+        <p>01110100 01110101 00100000 01110010 01101001 01110011 01100001 00101100 00100000 01110100 01110101 00100000 01101111 01101100 01101111 01110010 00101100 00100000 01110100 01110101 00100000 01110011 01101111 01101110 01110010 01101001 01110011 01100001 00100000 01111001 00001010</p>
+        <p>01110100 01101111 01100100 01101111 00100000 01110011 01101111 01100010 01110010 01100101 00100000 01110100 01101001 00101110 00001010</p>
+        <p></p>
+        <p>01010011 01101001 00100000 01101110 01110101 01101110 01100011 01100001 00100000 01101110 01101111 01110011 00100000 01110110 01101111 01101100 01110110 01100101 01101101 01101111 01110011 00100000 01100001 00001010</p>
+        <p>01100101 01101110 01100011 01101111 01101110 01110100 01110010 01100001 01110010 00100000 01100101 01110011 01110000 01100101 01110010 01101111 00100000 01110001 01110101 01100101 00100000 01110011 01100101 01100001 01110011 00001010</p>
+        <p>01100110 01100101 01101100 01101001 01111010 00100000 01110000 01101111 01110010 00100000 01100101 01101100 00100000 01110010 01100101 01110011 01110100 01101111 00100000 01100100 01100101 00100000 01110100 01110101 00100000 01110110 01101001 01100100 01100001 00001010</p>
+        <p>01100100 01101111 01101110 01100100 01100101 00100000 01110001 01110101 01101001 01100101 01110010 01100001 00100000 01110001 01110101 01101001 01100101 01110010 01100001 00100000 01110001 01110101 01101001 01100101 01110010 01100001 00100000 01110001 01110101 01100101 00100000 01100101 01110011 01110100 11000011 10111001 01110011 00100000 01111001 00001010</p>
+        <p>01100011 01101111 01101110 00100000 01110001 01110101 01101001 01100101 01101110 00100000 01110001 01110101 01101001 01100101 01110010 01100001 00100000 01110001 01110101 01101001 01100101 01110010 01100001 00100000 01110001 01110101 01101001 01100101 01110010 01100001 00100000 01110001 01110101 01100101 00100000 01100101 01110011 01110100 11000011 10111001 01110011 00101100 00100000 01100110 01100101 01101001 01110100 01101111 00101110 00001010</p>
+        <p></p>
+        <p>01010100 01100101 00100000 01101111 01100100 01101001 01101111 00101110</p>
+      </div>
+    </div>
+    <!-- Audio de fondo para descrypt -->
+    <audio id="bg-descrypt" src="Cómo Hacer Para Olvidarte - Manuel Medrano.mp3" loop></audio>
+  </div>
+
+  <!-- Pestaña video -->
+  <div id="render" class="content" style="display:none;">
+    <div class="video-section">
+      <h2>🎬 Videos</h2>
+      <div class="video-gallery">
+        <video controls>
+          <source src="video 3.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+        </video>
+
+        <video controls>
+          <source src="video 4.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+        </video>
+
+        <video controls>
+          <source src="video 5.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+        </video>
+
+        <video controls>
+          <source src="video 6.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+        </video>
+
+        <video controls>
+          <source src="video 2.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+        </video>
+
+        <video controls>
+          <source src="video ultimo.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+        </video>
+
+        <!-- Envolvemos el video de película y su nota para que la nota quede justo debajo -->
+        <div class="video-with-note">
+          <video controls>
+            <source src="video pelicula.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+          </video>
+          <p style="margin-top:10px; font-size:0.95rem; color:#fff; text-align:center;">
+            Por  cierto feito💙 si en algún momento quieres acordarte de mí… recuerda terminar las pelis que quedaron inconclusas,  se llama Eterno resplandor de una mente sin recuerdos, y tampoco las de Harry Potter.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pestaña audio con video al lado izquierdo y canciones a la derecha -->
+  <div id="audio" class="content" style="display:none;">
+    <div class="audio-flex">
+      <div class="audio-video">
+        <!-- Silenciado para permitir autoplay al abrir la pestaña -->
+        <video muted playsinline>
+          <source src="video.mp4" type="video/mp4">
+          Tu navegador no soporta video.
+        </video>
+      </div>
+      <div class="audio-list">
+       
+        <ul id="audio-playlist">
+          <li>
+            <span class="track-name">Labios Sellados - Escarlata, Me Dice Jos</span><br>
+            <audio controls preload="metadata" src="Labios Sellados - Escarlata, Me Dice Jos.mp3"></audio>
+          </li>
+          <li>
+            <span class="track-name">Enamorados - Escarlata</span><br>
+            <audio controls preload="metadata" src="Enamorados - Escarlata.mp3"></audio>
+          </li>
+          <li>
+            <span class="track-name">august - Taylor Swift</span><br>
+            <audio controls preload="metadata" src="august - Taylor Swift.mp3"></audio>
+          </li>
+          <li>
+            <span class="track-name">Next Summer - Damiano David</span><br>
+            <audio controls preload="metadata" src="Next Summer - Damiano David.mp3"></audio>
+          </li>
+          <li>
+            <span class="track-name">¿Cómo te echo de menos? - Alejandro Sanz</span><br>
+            <audio controls preload="metadata" src="Cómo te echo de menos - Alejandro Sanz.mp3"></audio>
+          </li>
+          <li>
+            <span class="track-name">I Wish You Love - Laufey</span><br>
+            <audio controls preload="metadata" src="I Wish You Love - Laufey.mp3"></audio>
+          </li>
+          <li>
+            <span class="track-name">Let Her Go - All The Little Lights</span><br>
+            <audio controls preload="metadata" src="Let Her Go - All The Little Lights.mp3"></audio>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      // Ocultar todas las pestañas y pausar medios
+      document.querySelectorAll('.content').forEach(el => {
+        // Pausa y reinicia videos de pestañas no activas
+        el.querySelectorAll('video').forEach(v => {
+          v.pause();
+          v.currentTime = 0;
+        });
+        // Pausa y reinicia audios de pestañas no activas
+        el.querySelectorAll('audio').forEach(a => {
+          a.pause();
+          a.currentTime = 0;
+        });
+        el.style.display = 'none';
+      });
+
+      // Mostrar la pestaña seleccionada
+      const active = document.getElementById(tabId);
+      active.style.display = 'flex';
+
+      // Botón activo en el nav
+      document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active'));
+      if (typeof event !== 'undefined' && event.target) {
+        event.target.classList.add('active');
+      }
+
+      // Autoplay de videos solo en la pestaña activa (silenciados)
+      active.querySelectorAll('video').forEach(v => {
+        v.muted = true;
+        v.playsInline = true;
+        v.play().catch(() => {});
+      });
+
+      // Autoplay SOLO de los audios de fondo por pestaña
+      const bgByTab = {
+        main: 'bg-main',
+        readme: 'bg-readme',
+        descrypt: 'bg-descrypt'
+      };
+      const bgId = bgByTab[tabId];
+      if (bgId) {
+        const bgAudio = document.getElementById(bgId);
+        if (bgAudio) bgAudio.play().catch(() => {});
+      }
+    }
+
+    // Mostrar frases al hacer clic (funciona con <li class="phrase">)
+    const phrases = document.querySelectorAll('.phrase');
+    phrases.forEach(phrase => {
+      phrase.addEventListener('click', () => {
+        phrases.forEach(p => {
+          p.classList.remove('revealed');
+          p.textContent = "✨ Haz clic para revelar la frase";
+        });
+        phrase.textContent = phrase.dataset.text;
+        phrase.classList.add('revealed');
+      });
+    });
+
+    // Obtiene todos los <audio> en el orden del <ul id="audio-playlist">
+    const audioPlaylist = document.getElementById('audio-playlist');
+    const audios = Array.from(document.querySelectorAll('#audio-playlist audio'));
+    const trackNames = Array.from(document.querySelectorAll('#audio-playlist .track-name'));
+    let currentIndex = 0;
+
+    function pauseAllExcept(index) {
+      audios.forEach((a, i) => {
+        if (i !== index) {
+          a.pause();
+          a.currentTime = 0;
+          if (trackNames[i]) trackNames[i].classList.remove('playing');
+        }
+      });
+    }
+
+    function playTrack(index) {
+      if (!audios.length) return;
+      if (index < 0 || index >= audios.length) return;
+      pauseAllExcept(index);
+      currentIndex = index;
+      if (trackNames[index]) {
+        // indicación visual simple (puedes estilizar con CSS si lo deseas)
+        trackNames.forEach(t => t.classList.remove('playing'));
+        trackNames[index].classList.add('playing');
+      }
+      audios[index].play().catch(() => {
+        // Si el navegador bloquea reproducción automática audible, se queda preparado para reproducir al interactuar.
+      });
+    }
+
+    // Cuando una pista termina, reproduce la siguiente automáticamente
+    audios.forEach((audioEl, idx) => {
+      audioEl.addEventListener('ended', () => {
+        if (idx + 1 < audios.length) {
+          playTrack(idx + 1);
+        } else {
+          // fin de la lista: opcionalmente reiniciar o detener — aquí lo dejamos detenido.
+          if (trackNames[idx]) trackNames[idx].classList.remove('playing');
+        }
+      });
+
+      // Si el usuario reproduce manualmente una pista, pausamos las demás
+      audioEl.addEventListener('play', () => {
+        pauseAllExcept(idx);
+        currentIndex = idx;
+        trackNames.forEach((t,i)=> t.classList.toggle('playing', i===idx));
+      });
+    });
+
+    // Iniciar playlist al hacer clic en la pestaña "audio.mp3" 
+    const audioTabBtn = document.querySelector("button[onclick=\"showTab('audio')\"]");
+    if (audioTabBtn) {
+      audioTabBtn.addEventListener('click', () => {
+        // Reiniciar y reproducir desde la primera pista
+        currentIndex = 0;
+        audios.forEach(a => { a.pause(); a.currentTime = 0; });
+        // Pequeña espera para asegurar que la pestaña ya está visible
+        setTimeout(() => {
+          playTrack(0);
+        }, 50);
+      });
+    }
+    
+    window.addEventListener('load', () => {
+      showTab('main');
+      const mainBg = document.getElementById('bg-main');
+      if (mainBg) mainBg.play().catch(()=>{});
+    });
+  </script>
+</body>
+</html>
+
+
